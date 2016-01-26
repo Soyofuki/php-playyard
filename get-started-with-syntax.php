@@ -8,7 +8,7 @@
  include('header.php');
  require('core.php');
 
- // echo 内容支持 HTML
+ // echo supports HTML
  echo "<strong>This is a bold text.</strong>";
 
  $NAME = 'BREEZE';
