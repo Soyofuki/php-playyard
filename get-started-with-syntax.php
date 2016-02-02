@@ -19,9 +19,9 @@
  echo $name.$NAME; // breezeBREEZE
  echo $$variable; // breeze
 
- define("CASE_SENSITIVE_CONSTANT","CONSTANT_SAMPLE",true); // define a case-sensitive constant
- define("CASE_INSENSITIVE_CONSTANT","CONSTANT_SAMPLE",false); // define a case-insensitive constant
- define("CONSTANT","CONSTANT_SAMPLE"); // a constant case-insensitive by default
+ define("CASE_SENSITIVE_CONSTANT","CONSTANT_SAMPLE",true); // define a name case-sensitive constant
+ define("CASE_INSENSITIVE_CONSTANT","CONSTANT_SAMPLE",false); // define a name case-insensitive constant
+ define("CONSTANT","CONSTANT_SAMPLE"); // a constant is name case-insensitive by default. However, Case-insensitive constants are stored as lower-case, so you cannot define a lower-case named constant after you just defined a constant with the same name, even if it is Upper-cased.
  echo CASE_SENSITIVE_CONSTANT;
 
  $string1 = '9';
