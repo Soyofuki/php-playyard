@@ -19,9 +19,9 @@
  echo $name.$NAME; // breezeBREEZE
  echo $$variable; // breeze
 
- define("CASE_SENSITIVE_CONSTANT","CONSTANT_SAMPLE",true);
- define("CASE_INSENSITIVE_CONSTANT","CONSTANT_SAMPLE",false);
- define("CONSTANT","CONSTANT_SAMPLE"); // case-insensitive by default
+ define("CASE_SENSITIVE_CONSTANT","CONSTANT_SAMPLE",true); // define a case-sensitive constant
+ define("CASE_INSENSITIVE_CONSTANT","CONSTANT_SAMPLE",false); // define a case-insensitive constant
+ define("CONSTANT","CONSTANT_SAMPLE"); // a constant case-insensitive by default
  echo CASE_SENSITIVE_CONSTANT;
 
  $string1 = '9';
@@ -61,7 +61,7 @@
  $booleanResult = $t and $f or $t xor $f && $t || !$f
  
  if ($num1 > 1 and $num1 < 1 or $num1 >= 0 xor $num2 <= 5 && $num1 != $num2 || !($num1 <> $num2)) {
- } Elseif ($num1 == $num2) { // equals to
+ } else if ($num1 == $num2) { // equals to
   echo $num1++;
  } else if ($num1 === $num2) { // equals to and of the same type (identical)
   echo $num1--;
